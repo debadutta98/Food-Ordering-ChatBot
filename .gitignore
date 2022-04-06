@@ -1,0 +1,10 @@
+node_modules
+lib
+.env
+.vscode
+extra
+logger
+package-lock.json
+*.txt
+Cards/txtfiles
+helper/serviceAccountKey.json

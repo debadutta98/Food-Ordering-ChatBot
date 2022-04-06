@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Web Chat: Customizing thru style options</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"
+    ></script>
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
+  <body
+    onbeforeunload="return (function() {
+    return '';
+  })();"
+  >
+    <div class="dropdown-backdrop"></div>
+    <div class="loading-container">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div id="webchat"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

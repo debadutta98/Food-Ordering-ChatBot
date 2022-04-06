@@ -1,0 +1,49 @@
+{
+    "name": "food-ordering-chatbot",
+    "version": "1.0.0",
+    "description": "ordering food from online",
+    "author": "Generated using Microsoft Bot Builder Yeoman generator v4.14.0",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./index.js",
+        "watch": "nodemon ./index.js",
+        "lint": "eslint .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com"
+    },
+    "dependencies": {
+        "api": "^4.2.0",
+        "axios": "^0.25.0",
+        "body-parser": "^1.19.1",
+        "botbuilder": "~4.14.0",
+        "botbuilder-ai": "^4.15.0",
+        "botbuilder-core": "^4.15.0",
+        "botbuilder-dialogs": "^4.15.0",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "express-openid-connect": "^2.6.0",
+        "fast-two-sms": "^3.0.0",
+        "firebase-admin": "^10.0.2",
+        "jsonwebtoken": "^8.5.1",
+        "logger": "^0.0.1",
+        "moment": "^2.29.1",
+        "nanoid": "^3.3.1",
+        "nodemailer": "^6.7.2",
+        "redux": "^4.1.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.0.0",
+        "eslint-config-standard": "^14.1.1",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "nodemon": "^2.0.4"
+    }
+}

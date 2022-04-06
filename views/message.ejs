@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="icon" type="image/x-icon" href="<%= favicon %>" />
+    <style>
+      .container {
+        display: flex;
+        flex: 1 2 100px;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img src="<%= img %>" width="50" height="50" />
+      </div>
+      <div>
+        <h4><%= heading %></h4>
+      </div>
+    </div>
+  </body>
+  <script>
+    setTimeout(() => {
+      window.open("", "_self").close();
+    }, 4000);
+  </script>
+</html>
