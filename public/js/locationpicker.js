@@ -1,6 +1,6 @@
 async function reverseGeoCoding(lat, lon) {
   return await fetch(
-    `https://us1.locationiq.com/v1/reverse.php?key=pk.3ba76982f2610611c83a09d8af562e12&lat=${lat}&lon=${lon}&format=json`
+    `https://us1.locationiq.com/v1/reverse.php?key=<YOUR-API-KEY>&lat=${lat}&lon=${lon}&format=json`
   )
     .then((response) => {
       if (response.ok) {
@@ -15,7 +15,7 @@ async function reverseGeoCoding(lat, lon) {
 }
 async function geoCoding(address) {
   return await fetch(
-    `https://us1.locationiq.com/v1/search.php?key=pk.3ba76982f2610611c83a09d8af562e12&q=${address}&format=json`
+    `https://us1.locationiq.com/v1/search.php?key=<YOUR-API-KEY>&q=${address}&format=json`
   )
     .then((response) => {
       if (response.ok) {
@@ -30,8 +30,7 @@ async function geoCoding(address) {
 }
 
 const mapHandler = async (lat = 40, lng = -74.5) => {
-  mapboxgl.accessToken =
-    "pk.eyJ1IjoiZGViYWR1dHRhOTEiLCJhIjoiY2t6ZmxlaDl0MHNhNjJvb2NodjBhdjBjYiJ9.Ch0hD8PS3fmFT031d32SWg";
+  mapboxgl.accessToken = "<YOUR-API-TOKEN>";
   const map = new mapboxgl.Map({
     container: "map", // container ID
     style: "mapbox://styles/mapbox/streets-v11", // style URL
@@ -149,6 +148,7 @@ document
             window.open(location.href, "_self").close();
           }, 2000);
         } else {
+          window.open(location.href, "_self");
           //unsuccessfully request
         }
       });
@@ -170,6 +170,7 @@ document
             window.open(location.href, "_self").close();
           }, 2000);
         } else {
+          window.open(location.href, "_self");
           //unsuccessfully request
         }
       });

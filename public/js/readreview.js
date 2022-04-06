@@ -8,16 +8,7 @@ import {
   push,
   remove,
 } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
-const firebaseConfig = {
-  apiKey: "AIzaSyBhfqaVZI6r_x22uBejolXOO2FENbGNCgY",
-  authDomain: "react-practice-9211b.firebaseapp.com",
-  databaseURL: "https://react-practice-9211b-default-rtdb.firebaseio.com",
-  projectId: "react-practice-9211b",
-  storageBucket: "react-practice-9211b.appspot.com",
-  messagingSenderId: "647650802291",
-  appId: "1:647650802291:web:aff4d33b3a553b70bcc806",
-  measurementId: "G-YHYE25F5CB",
-};
+const firebaseConfig = {};
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 $(function () {
