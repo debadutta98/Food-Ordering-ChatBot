@@ -13,7 +13,6 @@ const getAccessToken = async () => {
       }),
     })
     .then(function (response) {
-      console.log(response.data);
       if (response.data && response.data.token_type)
         return `${response.data.token_type} ${response.data.access_token}`;
       else return false;

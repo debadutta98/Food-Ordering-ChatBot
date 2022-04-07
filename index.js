@@ -13,7 +13,6 @@ const { nanoid } = require("nanoid");
 const jwt = require("jsonwebtoken");
 const axios = require("axios").default;
 require("dotenv").config();
-const staticdata = require("./extra/review-card.json");
 // Import required bot services.
 // See https://aka.ms/bot-services to learn more about the different parts of a bot.
 const {
