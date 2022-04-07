@@ -8,5 +8,3 @@ package-lock.json
 *.txt
 Cards/txtfiles
 helper/serviceAccountKey.json
-public/js/locationpicker.js
-public/js/readreview.js
