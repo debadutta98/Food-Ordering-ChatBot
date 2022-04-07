@@ -4,7 +4,7 @@
 
 **Step-1**
 
-Create a  .env on your root folder
+Create a .env in your root folder
 
 Environment Variables
 
@@ -43,8 +43,23 @@ Create a logger/development.log to see the developement error
 
 **Step-4**
 
-Need to set the apikey of Mapbox and locationIQ API keys in a frontend javascript file
+Need to set the apikey of Mapbox, locationIQ and Firebase API keys in a frontend javascript file 
 
+- Go to public/js/locationpicker.js
+  
+``` 
+Line 3: https://us1.locationiq.com/v1/reverse.php?key=<YOUR-LocationIQ-API-KEY>&lat=${lat}&lon=${lon}&format=json
+
+Line 18: https://us1.locationiq.com/v1/search.php?key=<YOUR-LocationIQ-API-KEY>&q=${address}&format=json
+
+Line 33: mapboxgl.accessToken = "<YOUR-MAP-BOX-API-TOKEN>"
+ ```
+- Go to public/js/readreview.js
+
+```
+Line 11: Paste your firebase config secrets for frontend
+
+```
 
 
 ---
