@@ -31,11 +31,12 @@ LUISendpoint=<LUIS ENDPOINT>
 #SMTP secrets
 SMTP_USER=<SMTP OUTLOOK USER NAME>
 SMTP_PASS=<SMTP OUTLOOK PASSWORD>
+
 ```
 
 **Step-2**
 
-Create a file named ServiceAccountKey.json under your Helper folder and paste the json payload provide by firebase for their admin sdk
+Create a file named ServiceAccountKey.json under your Helper folder and paste the JSON payload provide by firebase for their admin sdk
 
 **Step-3**
 

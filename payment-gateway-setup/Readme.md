@@ -9,7 +9,7 @@ Create a cashfree account
 
 Switch to testing environment
 
-** Step-3 **
+**Step-3**
 
 Follow the [documentation](https://docs.cashfree.com/reference/pg-new-apis-endpoint) to know more
 
