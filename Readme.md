@@ -67,12 +67,7 @@ Line 11: Paste your firebase config secrets for frontend
 
 # Video
 
-<video width="500" height="500" controls>
-  <source src="https://github.com/debadutta98/Food-Ordering-ChatBot/blob/system-setup/video/fullVideo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
+[![Everything Is AWESOME](https://user-images.githubusercontent.com/62756279/164213663-ad008369-168a-461a-ade7-81956a4d70ac.png)](https://www.youtube.com/watch?v=MhfSsB4WQz0 "Everything Is AWESOME")
 
 
 
