@@ -67,7 +67,7 @@ Line 11: Paste your firebase config secrets for frontend
 
 # Video
 
-[![Everything Is AWESOME](https://user-images.githubusercontent.com/62756279/164213663-ad008369-168a-461a-ade7-81956a4d70ac.png)](https://www.youtube.com/watch?v=MhfSsB4WQz0 "Everything Is AWESOME")
+[![Everything Is AWESOME](https://user-images.githubusercontent.com/62756279/164213663-ad008369-168a-461a-ade7-81956a4d70ac.png)](https://www.youtube.com/embed/MhfSsB4WQz0 "Food Chat Bot")
 
 
 
