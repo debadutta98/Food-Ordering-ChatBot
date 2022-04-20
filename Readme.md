@@ -46,7 +46,7 @@ Create a logger/development.log to see the developement error
 
 Need to set the apikey of Mapbox, locationIQ and Firebase API keys in a frontend javascript file 
 
-- Go to public/js/locationpicker.js
+- Go to [public/js/locationpicker.js](https://github.com/debadutta98/Food-Ordering-ChatBot/blob/master/public/js/locationpicker.js)
   
 ``` 
 Line 3: https://us1.locationiq.com/v1/reverse.php?key=<YOUR-LocationIQ-API-KEY>&lat=${lat}&lon=${lon}&format=json
@@ -55,7 +55,7 @@ Line 18: https://us1.locationiq.com/v1/search.php?key=<YOUR-LocationIQ-API-KEY>&
 
 Line 33: mapboxgl.accessToken = "<YOUR-MAP-BOX-API-TOKEN>"
  ```
-- Go to public/js/readreview.js
+- Go to [public/js/readreview.js](https://github.com/debadutta98/Food-Ordering-ChatBot/blob/master/public/js/readreview.js)
 
 ```
 Line 11: Paste your firebase config secrets for frontend
@@ -65,7 +65,12 @@ Line 11: Paste your firebase config secrets for frontend
 
 ---
 
-Video
+# Video
+
+<video width="500" height="500" controls>
+  <source src="https://github.com/debadutta98/Food-Ordering-ChatBot/blob/system-setup/video/fullVideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 
