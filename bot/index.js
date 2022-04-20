@@ -16,12 +16,12 @@ class FoodBot extends ActivityHandler {
     this.conversationReferences = conversationReferences;
     this.dialogState = this.conversationState.createProperty("DialogState");
     this.onEvent(async (context, next) => {
-      if (context.activity.name === "webchat/logout") {
+      if (context?.activity?.name === "webchat/logout") {
         await context.sendActivity(context.activity.value.message);
-      } else if (context.activity.name === "webchat/welcome") {
+      } else if (context?.activity?.name === "webchat/welcome") {
         let userinfo = getLoginInfo(context.activity.from.id);
         await context.sendActivity({
-          attachments: [CardFactory.adaptiveCard(welcomeCard(userinfo.name))],
+          attachments: [CardFactory.adaptiveCard(welcomeCard(userinfo?.name))],
         });
       }
       await next();
@@ -32,8 +32,6 @@ class FoodBot extends ActivityHandler {
         if (membersAdded[cnt].id !== context.activity.recipient.id) {
           const convId = TurnContext.getConversationReference(context.activity)
             .conversation.id;
-          console.log(["Conversation Id", convId]);
-          console.log(["from activity ID"], context.activity.from.id);
           let userinfo = getLoginInfo(context.activity.from.id);
           if (!userinfo) {
             await context.sendActivity({

@@ -161,8 +161,8 @@ app.get("/auth/:refId", async (req, res) => {
           profile_img: req.oidc.user.picture,
           name:
             req.oidc.user.sub.split("|")[1] === "google-oauth2"
-              ? req.oidc.user.name
-              : req.oidc.user.nickname,
+              ? req.oidc?.user?.name
+              : req.oidc?.user?.nickname,
           phone: loginformation.user_metadata.phone,
         },
       });

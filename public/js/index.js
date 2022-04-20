@@ -187,6 +187,9 @@ const store = window.WebChat.createStore(
                   userwindow.addEventListener("load", () => {
                     disableInputs(true);
                   });
+                  userwindow.addEventListener('unload',()=>{
+                     disableInputs(false);
+                  });
                 }
               },
               true
@@ -442,7 +445,7 @@ window.addEventListener("webchatincomingactivity", ({ data }) => {
   }, 1000);
 });
 const generateToken = async () => {
-  await fetch("http://localhost:3978/createtoken", {
+  await fetch(`${location.href}createtoken`, {
     method: "POST",
     credentials: "include",
   }).then(async (res) => {
